@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/b5c603937d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo-white.png" class="logo">
+                    <ul id="sidemenu">
+                        <li>
+                            <a href="#header">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about">About</a>
+                        </li>
+                        <li>
+                            <a href="#services">Services</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolios</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <i class=" fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>
+                        Hello Everyone,
+                        <br>
+                        My self
+                        <span >Shubham Gupta</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------------------about--------------------------------------------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="/images/port.jpeg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About me</h1>
+                        <p>
+                            “I'm a software engineer who constantly seeks out innovative solutions to everyday problems.  I love working with a team.And I am always dedicated and punctual towards my work and duty. And always try to grasp new things.                          </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li>
+                                    <span>Programming</span>
+                                    <br>
+                                    C,C++,Javascript
+                                </li>
+                                <li>
+                                    <span>App designing</span>
+                                    <br>
+                                    React Native and flutter
+                                </li>
+                                <li>
+                                    <span>Web designing</span>
+                                    <br>
+                                    HTML,CSS,JS,Angular,React
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li>
+                                    <span>App developement</span>
+                                    <br>
+                                    React native,Flutter
+                                </li>
+                                <li>
+                                    <span>Web designing</span>
+                                    <br>
+                                    Angular,React
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>
+                                    <span>Graduation</span>
+                                    <br>
+                                    BTECH(2022 from CSVTU)
+                                </li>
+                                <li>
+                                    <span>Intermediate</span>
+                                    <br>
+                                    Shakuntala Vidyalaya ,Ram nagar Bhilai(C.G)
+                                </li>
+                                <li>
+                                    <span>Metric</span>
+                                    <br>
+                                    Sharda Vidyalaya,Vaishali Nagar Bhilai(C.G)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------services------------------------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>
+                            web Designer
+                        </h2>
+                        <p>“Website without visitors is like a ship lost in the horizon.” “SEO is an investment just like a tree that needs effort, patience and time to grow before you can see the result.” “Being first in the search result organically in Google is the dream of all website owners.”</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-comment"></i>
+                        <h2>
+                            App Designer
+                        </h2>
+                       <p>An attractive app should have brand consistency, an intuitive UI, and clear, organized content. This means applying consistent colors and design standards across your platform, eliminating features that don't add value to the app, and presenting content with information hierarchy in mind.
+                    </p>
+                       
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-microscope"></i>
+                        <h2>
+                            Tester
+                        </h2>
+                       <p>“More than the act of testing, the act of designing tests is one of the best bug preventers known. The thinking that must be done to create a useful test can discover and eliminate bugs before they are coded – indeed, test-design thinking can discover and eliminate bugs at every stage in the creation of software, from conception to specification, to design, coding and the rest.” – Boris Beizer</p>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------portfolio--------------------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="subtitle">My Works</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png" alt="">
+                        <div class="layer">
+                            <h3>Ecommerce App</h3>
+                            <p>An ecommerce app allows users to shop online, browse product catalogs, create wish lists, add items to a cart, and complete purchases.</p>
+                            <a href="https://github.com/shubhgithubrit/GroceryApp">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png" alt="">
+                        <div class="layer">
+                            <h3> Music App</h3>
+                            <p>it is found at the beginning and sets up the song, establishing many of the song's important elements, such as the key, tempo, rhythmic feel and even its energy and attitude.</p>
+                            <a href="https://github.com/shubhgithubrit/spotify">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png" alt="">
+                        <div class="layer">
+                            <h3>Video Calling App</h3>
+                            <p> The purpose of making a video conferencing application is to provide better understanding of the views and ideas between two and more people. Long distance communication with audio and video is very easy for understanding the views and ideas.</p>
+                            <a href="https://github.com/shubhgithubrit/VideoCallingApp">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------contact-------------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="subtitle">Contact me</h1>
+                        <p>
+                            <i class="fa-sharp fa-solid fa-paper-plane"></i>
+                            sg4030383@gmail.com
+                        </p>
+                        <p>
+                            <i class="fa-sharp fa-solid fa-phone-volume"></i>
+                            7880041963
+                        </p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/profile.php?id=100027572791193&mibextid=ZbWKwL">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/shubham145656/">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shubham-kumar-gupta-274453214">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <a href="images/Resume.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="enter your name"
+                                required
+                            >
+                            <input
+                                type="text"
+                                name="email"
+                                placeholder="enter your email"
+                                required
+                            >
+                            <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Lorem ipsum dolor
+                <i class="fa-solid fa-heart"></i>
+                sit amet.
+            </p>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-links")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyKiLhcIe-fUK9-vxYKASfl9KyoL52EfCLJjig7Ut2Xj4PYM8oCEX4-SYk76Lsg_Y3hHw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {msg.innerHTML="Message Sent Successfully!!"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+    })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
